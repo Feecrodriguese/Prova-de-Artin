@@ -21,7 +21,7 @@ module.exports = {
         dataCreate = {
             nome, usuario, senha, email
         }
-        const usuarios = await Usuario.create(dataCreate); 
+        const usuarios = await Usuario.create(dataCreate);  //insert into usuario (nome, usuario, senha, email) Values ...
         res.json(usuarios)
     }
 }
